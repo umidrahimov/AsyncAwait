@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 
 namespace AsyncAwait.Task1.CancellationTokens;
 
@@ -16,7 +17,7 @@ internal static class Calculator
             sum = sum + (i + 1);
             Thread.Sleep(10);
         }
-
+        
         return sum;
     }
 }
